@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Calculadora</title>
+        <link rel="icon" type="image/x-icon" href="img/icono.png">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <div class="display">
+                    <p id="output">0</p>
+                </div>
+
+                <div class="first-row">
+                    <button id="c" onclick="clearOutput()" style="width:280px">C</button>
+                </div>
+
+                <div class="first-row">
+                    <button id="7" onclick="calcular(this.id)">7</button>
+                    <button id="8" onclick="calcular(this.id)">8</button>
+                    <button id="9" onclick="calcular(this.id)">9</button>
+                    <button id="divide" onclick="calcular(this.id)">/</button>
+                </div>
+
+                <div class="second-row">
+                    <button id="4" onclick="calcular(this.id)">4</button>
+                    <button id="5" onclick="calcular(this.id)">5</button>
+                    <button id="6" onclick="calcular(this.id)">6</button>
+                    <button id="multiply" onclick="calcular(this.id)">*</button>
+                </div>
+
+                <div class="third-row">
+                    <button id="1" onclick="calcular(this.id)">1</button>
+                    <button id="2" onclick="calcular(this.id)">2</button>
+                    <button id="3" onclick="calcular(this.id)">3</button>
+                    <button id="subtract" onclick="calcular(this.id)">-</button>
+                </div>
+                
+                <div class="fourth-row">
+                    <button id="0" onclick="calcular(this.id)">0</button>
+                    <button id="equals" style="width:138px" onclick="calcular(this.id)">=</button>
+                    <button id="add" onclick="calcular(this.id)">+</button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
